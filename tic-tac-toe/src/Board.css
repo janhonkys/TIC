@@ -1,0 +1,65 @@
+/* Container for the entire board layout */
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Styles for the board grid */
+.board {
+    display: grid;
+    gap: 0px;
+}
+
+/* Add right margin to buttons for spacing */
+.button-spaced {
+    margin-right: 10px;
+}
+
+/* Add top margin to buttons or elements for vertical spacing */
+.button-spaceTop {  
+    margin-top: 25px;
+}
+
+/* Container for each row in the grid */
+.row {
+    display: flex;
+}
+
+/* Styles for each cell in the grid */
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #282c34;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #f1fcff;
+    transition: background-color 0.3s;
+}
+
+/* Change background color on hover */
+.cell:hover {
+    background-color: #e3e3e3;
+}
+
+/* Container for the game over message or elements */
+.game-over {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .cell {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+

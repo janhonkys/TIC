@@ -1,0 +1,124 @@
+/* Global styles for body */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Layout for configuration fields */
+.config-fields {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 20px;
+}
+
+/* Label styling within configuration fields */
+.config-fields label {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px; 
+}
+
+/* Styling for centered inputs */
+.centered-input {
+  width: 60px; 
+  padding: 5px;
+  font-size: 16px;
+  text-align: center; 
+  box-sizing: border-box; 
+}
+
+/* Code font styling */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Main container styling */
+.app-container {
+  text-align: center;
+  padding: 0px;
+}
+
+/* Header styling */
+.app-header {
+  background-color: #474c53;
+  padding: 20px;
+  color: white;
+}
+
+/* Section margin */
+.config-container, .result-section, .game-container {
+  margin-top: 20px;
+}
+
+/* Layout for config and JSON input sections */
+.config-section, .json-input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* General button styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #58dbff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #39caee;
+}
+
+/* Label styling */
+label {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Number input styling */
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* JSON input section layout */
+.json-input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* JSON Textarea Styling */
+.json-textarea {
+  width: 100%; /* Ensure it doesn't exceed the container width */
+  max-width: 600px; /* Set a max-width to prevent it from getting too wide */
+  height: 200px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Additional Margin for JSON Sections */
+.json-button, .json-input-section {
+  margin-top: 20px;
+}
